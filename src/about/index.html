@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css"> 
-    <link rel="stylesheet" href="../styles/home.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Buttons</title>
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
-
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <a href="/">
-                <img src="../assets/big-logo.png"/>
-            </a>
-        </div>
-    </header>
-    <main>
-        <section class="main-section">
-            <h2>
-                About page!
-            </h2>
-            <section>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati blanditiis odit. Et quas perferendis at nemo doloremque, asperiores eum. Alias ea quisquam corrupti deleniti ipsa est qui tempore aperiam!
-            </section>
-    </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+    <div class="stand-up">
+        <h1>These modulate Vertically</h1>
+    </div>
+    <div class="buttons">
+        <button>button1</button>
+        <button>button2</button>
+        <button>button3</button>
+        <h2>like this:</h2>
+    </div>
+    <svg>
+        <defs>
+            <filter id="wave">
+                <feTurbulence type='fractalNoise' baseFrequency='0.09 0.0001' numOctaves='1' result='warp' />
+                <feDisplacementMap xchannelSelector='R' yChannelSelector='G' scale='30' in='SourceGraphic' in2='warpOffset' />
+            </filter>
+        </defs>
+    </svg>
+    <div class="stand-up">
+        <h1>These modulate Horizontally</h1>
+    <div class="buttons">
+        <button>button1</button>
+        <button>button2</button>
+        <button>button3</button>
+        <h2>like this:</h2>
+    </div>
 
+    <script src="./app.js"></script>
 </body>
 
 </html>
